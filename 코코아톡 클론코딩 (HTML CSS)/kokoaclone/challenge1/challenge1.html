@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Challenge #1</title>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <div>
+        <label for="First name">First name</label>
+        <input
+          id="First name"
+          type="text"
+          placeholder="First name"
+          required="required"
+        />
+      </div>
+      <div>
+        <label for="Last name">Last name</label>
+        <input
+          id="Last name"
+          type="text"
+          placeholder="Last name"
+          required="required"
+        />
+      </div>
+      <div>
+        <label for="Email">Email</label>
+        <input
+          id="Email"
+          type="email"
+          placeholder="Email"
+          required="required"
+        />
+      </div>
+      <div>
+        <label for="Username">Username</label>
+        <input
+          id="Username"
+          type="text"
+          placeholder="Username"
+          required="required"
+        />
+      </div>
+      <div>
+        <label for="Password">Password</label>
+        <input
+          id="Password"
+          type="password"
+          required="required"
+          minlength="10"
+          placeholder="Password"
+        />
+      </div>
+      <div>
+        <label for="Birth Date">Birth Date</label>
+        <input
+          id="Birth Date"
+          type="date"
+          required="required"
+          max="2999-12-31"
+        />
+      </div>
+      <div>
+        <label for="How happy">How happy are you?</label>
+        <input
+          id="How happy"
+          type="range"
+          max="10"
+          required="required"
+          list="tickmarks"
+        />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+          <option value="9"></option>
+          <option value="10"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="fav.color">What is your fav.color</label>
+        <input id="fav.color" type="color" required="required" />
+      </div>
+      <div>
+        <input type="submit" value="Create Account" />
+      </div>
+    </form>
+  </body>
+</html>
