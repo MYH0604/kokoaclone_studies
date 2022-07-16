@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 990px;
+  height: 990px;
+}
+main {
+  width: 360px;
+  height: 780px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  position: relative;
+}
+.header {
+  padding: 0px 25px;
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+}
+.playlist .artist {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playlist .artist__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  box-shadow: 0 0 30px 1px rgb(216, 133, 95, 0.7);
+}
+.playlist .artist__name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.playlist .artist__genre {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.playlist .artist__btn {
+  display: flex;
+  padding: 0px 55px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.playlist .artist__shuffle-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 17px;
+}
+.playlist .artist__heart-btn {
+  padding: 10px 25px;
+  border-radius: 17px;
+  box-shadow: 0 5px 2px rgba(190, 187, 187, 0.15);
+}
+.songs__song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.songs__song:nth-child(3) {
+  box-shadow: 0px 5px 2px rgba(190, 187, 187, 0.15);
+}
+.songs__song :first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.songs__img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.songs__artist {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 12px;
+}
+.songs__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.songs__song :last-child i {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.control {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 0px 25px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 320px;
+  left: 20px;
+  bottom: 20px;
+  box-shadow: 0px 5px 2px 2px rgba(105, 104, 104, 0.15);
+}
+.control__info {
+  display: flex;
+  flex-direction: column;
+}
+.control__artist {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  margin: 15px 0px 5px 0px;
+}
+.control__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.control__controller {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+.control__controller :nth-child(2) {
+  font-size: 25px;
+}
+
+.playing .artist {
+  margin-top: 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playing .artist__img {
+  width: 260px;
+  height: 260px;
+  border-radius: 30px;
+  margin-bottom: 60px;
+  box-shadow: 0px 20px 20px 10px rgba(221, 68, 68, 0.2);
+}
+.playing .artist__name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.playing .artist__genre {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.control-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+
+.control-bar__time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.control-bar__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.control-bar__nav div:nth-child(1) {
+  background-color: black;
+  width: 60%;
+  height: 2px;
+}
+.control-bar__nav div:nth-child(2) {
+  background-color: black;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.control-bar__nav div:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.226);
+  width: 40%;
+  height: 2px;
+}
+
+.control-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.control-btn :nth-child(1) {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.control-btn :nth-child(2) {
+  font-size: 25px;
+}
+.control-btn :nth-child(3) {
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px rgba(69, 21, 83, 0.12);
+}
+.control-btn :nth-child(4) {
+  font-size: 25px;
+}
+.control-btn :nth-child(5) {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
